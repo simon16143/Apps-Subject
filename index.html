@@ -1,28 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--metadata for the browser-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="Blog">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content = "index,follow">
-    <link rel = "stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel = "stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" 
+    rel="stylesheet">
     <title>Blog</title>
 </head>
-<body>
-   <header>
-       <nav>
-         <ul> 
-           <li>🧑 About me</li>
-           <li>📰 What's new</li>
-           <li>🧑‍💻 Hobbies</li>
-         </ul>    
-       </nav>
-       
-   </header> 
-   <main>
-    
-   </main>
-   <footer>
 
+
+<body>
+  <!--Top of my page-->
+   <header class="header">
+    <div class = "contenedor">
+      <div class="barra">
+        <a class="logo" href="index.html">
+          <h1 class="logo__nombre no-margin centrar-texto">Developer<span class="logo__bold">Blog</span></h1>
+        </a>
+        <nav class="navegacion">
+          <a href="Aboutme.html" class="navegacion__enlace">About me</a>
+          <a href="Courses.html" class="navegacion__enlace">Courses</a>
+          <a href="Contactme.html" class="navegacion__enlace">Contact me</a>
+        </nav>
+      </div> 
+    </div> 
+    <div class = "header__texto">
+      <h2 class="no-margin">Developer Blog</h2>
+      <p class="no-margin">Tips and Tricks for development</p>
+    </div>
+    
+   </header> 
+   <!--Main section-->
+ 
+     <div class="contenedor contenido-principal">
+       <main class="blog">
+         <h3>Our Blog</h3>
+         <!--First Entry-->
+         <article class="entrada">
+           <div class="entrada__imagen">
+            <img src="img/new-technologies.jpg" alt="imagen blog">
+           </div>
+            <div class="entrada__contedido">
+             <h4 class="no-margin">New Technologies</h4>
+             <p>Lorem ipsum dolor sit amet consectetur 
+               adipisicing elit. Officiis, consequatur cumque
+                atque rem autem tempora accusantium consectetur 
+                delectus! Recusandae maiores distinctio voluptate!
+                 Non laudantium repudiandae, inventore ad sequi 
+                 expedita quam.
+              </p>
+              <a href="entrada.html" class="boton boton--primario">Read Entry</a>
+            </div> 
+          </article>
+
+
+        <!-- Second Entry-->
+        <article class="entrada">
+          <div class="entrada__imagen">
+           <img src="img/no_bad_days.jpg" alt="imagen blog">
+          </div>
+           <div class="entrada__contedido">
+            <h4 class="no-margin">Keep Calm</h4>
+            <p>Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Officiis, consequatur cumque
+               atque rem autem tempora accusantium consectetur 
+               delectus! Recusandae maiores distinctio voluptate!
+                Non laudantium repudiandae, inventore ad sequi 
+                expedita quam.
+             </p>
+             <a href="entrada.html" class="boton boton--primario">Read Entry</a>
+           </div> 
+         </article>
+         
+         <!-- Third Entry-->
+         <article class="entrada">
+          <div class="entrada__imagen">
+           <img src="img/procrastination.jpg" alt="imagen blog">
+          </div>
+           <div class="entrada__contedido">
+            <h4 class="no-margin">Not Procrastination</h4>
+            <p>Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Officiis, consequatur cumque
+               atque rem autem tempora accusantium consectetur 
+               delectus! Recusandae maiores distinctio voluptate!
+                Non laudantium repudiandae, inventore ad sequi 
+                expedita quam.
+             </p>
+             <a href="entrada.html" class="boton boton--primario">Read Entry</a>
+           </div> 
+        </article>
+        
+        <!--Fourth Entry-->
+         <article class="entrada">
+          <div class="entrada__imagen">
+           <img src="img/workout.jpg" alt="imagen blog">
+          </div>
+           <div class="entrada__contedido">
+            <h4 class="no-margin">Stop and Workout</h4>
+            <p>Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Officiis, consequatur cumque
+               atque rem autem tempora accusantium consectetur 
+               delectus! Recusandae maiores distinctio voluptate!
+                Non laudantium repudiandae, inventore ad sequi 
+                expedita quam.
+             </p>
+             <a href="entrada.html" class="boton boton--primario">Read Entry</a>
+           </div> 
+         </article> 
+       </main>
+       <aside class="sidebar">
+         <h3>Courses and seminars</h3>
+       </aside>
+     </div> 
+ 
+    
+   <!--bottom of the page-->
+   <footer>
+    <p>Todos los derechos reservados</p>
+    <p>Accelerated by Symon Freelancer</p>
    </footer>
 </body>
 </html>
