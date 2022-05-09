@@ -33,6 +33,7 @@ a{
 }
 h1,h2,h3,h4{
     font-family:var(-- Fuenteheading);
+    line-height: 2;
 }
 h1{
     font-size:4.8rem;
@@ -77,6 +78,9 @@ img{
     .header__texto{
         margin-top: 15rem;
     }
+}
+.barra{
+    margin-top:4rem;
 }
 @media (min-width:768px){
    .barra{
@@ -133,6 +137,7 @@ img{
    text-transform: uppercase;
    font-weight: 700;
    margin-bottom: 2rem;
+   border:none;
    
 }
 @media (min-width:768px) {
@@ -140,7 +145,116 @@ img{
     display:inline-block;
     }
 }
+.boton:hover{
+  cursor: pointer;  
+}
 .boton--primario{
     background-color: var(--negro);
 
+}
+.boton--secundario{
+    background-color: var(--primario);
+
+}
+.cursos{
+  list-style:none ;  
+}
+.widget-curso{
+  border-bottom: 1px solid var(--gris) ;  
+  margin-bottom: 2rem ;
+}
+.widget-curso:nth-last-of-type{
+    border: none;
+    margin-bottom: none;
+
+}
+.widget-curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+
+}
+.widget-curso__info{
+    font-weight: normal;
+}
+.widget-curso__label,
+.widget-curso__info{
+    font-size: 2rem;
+}
+.footer{
+    background-color: var(--negro);
+    padding-bottom:3rem ;
+    margin: 4rem ;
+}
+/**About me**/
+@media(min-width:768px){
+    .sobre-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex-basis: calc(50% - 1rem);
+    }
+}
+/**Courses**/
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+
+}
+@media(min-width:768px){
+    .curso{
+        display:grid; 
+        grid-template-columns:1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.curso:last-of-type{
+    border:none;
+}
+.curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+
+}
+.curso__info{
+    font-weight: normal;
+}
+.curso__label,
+.curso__info{
+    font-size: 2rem;
+}
+/**Contact**/
+.contacto-bg{
+    background-image: url(./img/developer.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width:95%;
+  padding: 5rem;
+}
+.campo{
+  display:flex;
+  margin-bottom:2rem;
+  gap:2rem;
+}
+.campo__label{
+    flex:0 0 9rem;
+    text-align: right;
+    padding-right:2rem;
+}
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+   
+
+}
+.campo__field--textarea{
+    height:200px;
+    
 }

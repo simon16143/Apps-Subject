@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--metadata for the browser-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content = "index,follow">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel = "stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" 
+    rel="stylesheet">
+    <title>Blog</title>
+</head>
+
+
+<body>
+  <!--Top of my page-->
+   <header class="header">
+    <div class = "contenedor">
+      <div class="barra">
+        <a class="logo" href="index.html">
+          <h1 class="logo__nombre no-margin centrar-texto">Developer<span class="logo__bold">Blog</span></h1>
+        </a>
+        <nav class="navegacion">
+          <a href="Aboutme.html" class="navegacion__enlace">About me</a>
+          <a href="Courses.html" class="navegacion__enlace">Courses</a>
+          <a href="Contactme.html" class="navegacion__enlace">Contact me</a>
+        </nav>
+      </div> 
+    </div> 
+    <div class = "header__texto">
+      <h2 class="no-margin">Developer Blog</h2>
+      <p class="no-margin">Tips and Tricks for development</p>
+    </div>
+    
+   </header> 
+
+     <main class="contenedor">
+         <h3 class="centrar-texto">Contact me</h3>
+         <div class="contacto-bg"></div>
+         <form class="formulario">
+           <div class="campo">
+             <label class="campo__label" for="name">Name</label>
+             <input class="campo__field" type="text" placeholder="Type your name" id="name"> 
+           </div>
+
+           <div class="campo">
+            <label class="campo__label" for="email">E-mail</label>
+            <input class="campo__field" type="email" placeholder="Type your E-mail" id="email"> 
+          </div>
+
+          <div class="campo">
+            <label class="campo__label" for="message">Message</label>
+            <textarea class="campo__field campo__field--textarea" id="message"></textarea>
+          </div>
+          <div class="campo">
+            <input type="submit" value="Submit" class="boton boton--primario">
+          </div>
+         </form>
+        
+     </main> 
+ 
+    
+   <!--bottom of the page-->
+   <footer class="footer">
+     <div class="contenedor">
+      <div class="barra">
+        <a class="logo" href="index.html">
+          <h1 class="logo__nombre no-margin centrar-texto">Developer<span class="logo__bold">Blog</span></h1>
+        </a>
+        <nav class="navegacion">
+          <a href="Aboutme.html" class="navegacion__enlace">Accelerated by Symon Lopez</a>
+          
+        </nav>
+      </div> 
+     </div>
+
+   
+   </footer>
+</body>
+</html>
